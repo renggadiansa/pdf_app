@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#656161"
+    tools:context=".UploudPDF">
+
+
+    <TextView
+        android:id="@+id/textpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload PDF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF9800"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvname"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textpdf"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter PDF title name"
+            android:id="@+id/name"
+            android:textColor="#FF9800"
+            android:background="@drawable/shape"
+            android:textSize="22sp"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/black"
+        android:text="Uploud PDF"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        >
+    </Button>
+
+</RelativeLayout>
