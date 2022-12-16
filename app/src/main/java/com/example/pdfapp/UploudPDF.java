@@ -25,7 +25,7 @@ import com.google.firebase.storage.UploadTask;
 
 public class UploudPDF extends AppCompatActivity {
 
-    Button upload;
+    Button upload, viewPDF;
     EditText pdf_name;
 
 
@@ -41,6 +41,7 @@ public class UploudPDF extends AppCompatActivity {
 //        val add : Button = findViewById(R.id.upload_btn);
 //        Button add = (Button) findViewById(R.id.upload_btn);
         upload = findViewById(R.id.upload_btn);
+        viewPDF = findViewById(R.id.viewPDF_btn);
         pdf_name = findViewById(R.id.name);
 
 
@@ -105,5 +106,13 @@ public class UploudPDF extends AppCompatActivity {
 
                     }
                 });
+
+        viewPDF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
