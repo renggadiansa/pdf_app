@@ -92,7 +92,7 @@ public class UploudPDF extends AppCompatActivity {
                         pdfClass pdfClass = new pdfClass(pdf_name.getText().toString(),uri.toString());
                         databaseReference.child(databaseReference.push().getKey()).setValue(pdfClass);
 
-                        Toast.makeText(UploudPDF.this, "File Uploaded", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(UploudPDF.this, "PDF telah diupload", Toast.LENGTH_SHORT).show();
 
                         progressDialog.dismiss();
 
